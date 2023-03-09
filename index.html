@@ -82,64 +82,65 @@
         </head>
 
         <body>
+            <div class=" main-wrapper">
+                <h2>Welcome to my Website!</h2>
+                <p>Click on the buttons inside the tabbed menu:</p>
 
-            <h2>Welcome to my Website!</h2>
-            <p>Click on the buttons inside the tabbed menu:</p>
+                <div class="tab">
 
-            <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Meet Mindy')">Meet Mindy</button>
 
-                <button class="tablinks" onclick="openTab(event, 'Meet Mindy')">Meet Mindy</button>
+                    <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
 
-                <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+                    <button class="tablinks" onclick="openTab(event, 'Best Works')">Best Works</button>
 
-                <button class="tablinks" onclick="openTab(event, 'Best Works')">Best Works</button>
+                    <button class="tablinks" onclick="openTab(event, 'Literature')">Literature</button>
 
-                <button class="tablinks" onclick="openTab(event, 'Literature')">Literature</button>
+                    <button class="tablinks" onclick="openTab(event, 'ISTE Standards')">ISTE Standards</button>
 
-                <button class="tablinks" onclick="openTab(event, 'ISTE Standards')">ISTE Standards</button>
+                </div>
 
+                <div id="Meet Mindy" class="tabcontent">
+                    <h3>More about Mindy...</h3>
+                    <p>Can be found in the follow page.</p>
+                </div>
+
+                <div id="Resume" class="tabcontent">
+                    <h3>Find Mindy's Resume</h3>
+                    <p>HERE.</p>
+                </div>
+
+                <div id="Best Works" class="tabcontent">
+                    <h3>Best Works</h3>
+                    <p>Read the title.</p>
+                </div>
+
+                <div id="Literature" class="tabcontent">
+                    <h3>Literature</h3>
+                    <p>Get LIT.</p>
+                </div>
+
+                <div id="ISTE Standards" class="tabcontent">
+                    <h3>ISTE Standards</h3>
+                    <p>High standards. You know?</p>
+                </div>
+
+
+                <script>function openTab(evt, tabName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(tabName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }</script>
+                <!-- end of test code-->
             </div>
-
-            <div id="Meet Mindy" class="tabcontent">
-                <h3>More about Mindy...</h3>
-                <p>Can be found in the follow page.</p>
-            </div>
-
-            <div id="Resume" class="tabcontent">
-                <h3>Find Mindy's Resume</h3>
-                <p>HERE.</p>
-            </div>
-
-            <div id="Best Works" class="tabcontent">
-                <h3>Best Works</h3>
-                <p>Read the title.</p>
-            </div>
-
-            <div id="Literature" class="tabcontent">
-                <h3>Literature</h3>
-                <p>Get LIT.</p>
-            </div>
-
-            <div id="ISTE Standards" class="tabcontent">
-                <h3>ISTE Standards</h3>
-                <p>High standards. You know?</p>
-            </div>
-
-
-            <script>function openTab(evt, tabName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }</script>
-            <!-- end of test code-->
 
         </body>
 
