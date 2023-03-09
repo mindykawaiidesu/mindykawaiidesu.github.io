@@ -5,111 +5,6 @@
 <html lang="en">
 <!--<![endif]-->
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    body {
-        font-family: Roboto;
-    }
-
-    /* Style the tab */
-    .tab {
-        overflow: hidden;
-        border: 1px solid #545E6C; /* Border for entire tab section color*/
-        background-color: #FDA246;
-        /* Actual tab color */
-    }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-            color: #fff;
-        }
-
-            /* Change background color of buttons on hover */
-            .tab button:hover {
-                background-color: #fec892;
-            }
-
-            /* Create an active/current tablink class */
-            .tab button.active {
-                background-color: #cb8238;
-            }
-
-    /* Style the tab content */
-    .tabcontent {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #97AAC3;
-        border-top: none;
-        background-color: #f5f5f5;
-    }
-</style>
-</head>
-<body>
-
-    <h2>Tabs</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
-
-    <div class="tab">
-
-        <button class="tablinks" onclick="openTab(event, 'Meet Mindy')">Meet Mindy</button>
-
-        <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
-
-        <button class="tablinks" onclick="openTab(event, 'Best Works')">Best Works</button>
-
-        <button class="tablinks" onclick="openTab(event, 'Literature')">Literature</button>
-
-        <button class="tablinks" onclick="openTab(event, 'ISTE Standards')">ISTE Standards</button>
-
-    </div>
-
-    <div id="Meet Mindy" class="tabcontent">
-        <h3>More about Mindy...</h3>
-        <p>Can be found in the follow page.</p>
-    </div>
-
-    <div id="Resume" class="tabcontent">
-        <h3>Find Mindy's Resume</h3>
-        <p>HERE.</p>
-    </div>
-
-    <div id="Best Works" class="tabcontent">
-        <h3>Best Works</h3>
-        <p>Read the title.</p>
-    </div>
-
-    <div id="Literature" class="tabcontent">
-        <h3>Literature</h3>
-        <p>Get LIT.</p>
-    </div>
-
-    <div id="ISTE Standards" class="tabcontent">
-        <h3>ISTE Standards</h3>
-        <p>High standards. You know?</p>
-    </div>
-
-
-    <script>function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }</script>
 
 <!-- THIS IS THE START OF THE ACTUAL CODE --> 
     <head>
@@ -117,7 +12,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
         <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
         <link rel="shortcut icon" href="favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
@@ -158,7 +52,7 @@
                         <li class="email">
                             <i class="fa fa-paper-plane-o"></i><a href="mailto:missmindykhamvongsa@gmail.com">Email Me!</a>
                         </li>
-                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:860-391-3369">860-391-3369</a></li>
+                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:929-498-1548">929-498-1548</a></li>
                         <li class="linkedin">
                             <i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/missmindykay">
                                 my Linkedin!
@@ -223,648 +117,714 @@
                 <!-- <p> Hello my name is Mindy Khamvongsa and I am a graduate of Fairfield University’s teaching preparation program. Throughout my teaching experience in the kindergarten through sixth-grade level in both urban and suburban school districts. Having a vast background with working in such diverse environments. I have recently completed my Master of Arts in Elementary Education and have successfully passed my PRAXIS I and Foundations of Reading. With that said, I am currently in the process of finalizing the remaining pieces left for my Connecticut Teaching Certification and hope to have everything in order by mid-summer.</p> -->
                 <!-- </div>-->
                 <!-- </section>-->
+                <!-- START OF ACTUAL CODE-->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                    body {
+                        font-family: Roboto;
+                    }
 
-                <section class="section experiences-section">
-                    <h2 class="section-title"><i class="fa fa-star"></i>Portfolio Samples</h2>
+                    /* Style the tab */
+                    .tab {
+                        overflow: hidden;
+                        border: 1px solid #545E6C; /* Border for entire tab section color*/
+                        background-color: #FDA246;
+                        /* Actual tab color */
+                    }
 
-                    <div class="intro">
-                        <p>
-                            <i>
-                                Below are samples of resources I've created and utilized within my classroom thrus far throughout my career as an educator. Please
-                                feel free to download by clicking the links below!
-                            </i>
-                        </p>
-                    </div>
-                    <!--//intro-->
-                    <!-- Teaching Philosophy Link
-                    <h2 class="job-title"><i class="fa fa-heart"></i><a
-                            href="https://docs.google.com/document/d/1HIapA3-VniaYZANCoFKGEl63O1COjt17JFG33111WLk/edit?usp=sharing">
-                            Philosophy</a></h2><br> -->
-                    <!-- Gallery Link
-                    h2 class="job-title"><i class="fa fa-camera"></i><a
-                        href="https://docs.google.com/document/d/1obXiZiReiU6XXLeaak8jIESYbVoP0_eX4NbfqCBY4lg/edit?usp=sharing">
-                        Gallery</a></h2><br> -->
-                    <h2 class="job-title">
-                        <i class="fa fa-book"></i><a href="https://drive.google.com/drive/folders/1m0hQVw3Rn5-51w5J5TlmPgTKT4fIRZoF?usp=sharing">
-                            Literacy
-                        </a>
-                    </h2><br>
-                    <h2 class="job-title">
-                        <i class="fa fa-flask"></i><a href="https://drive.google.com/drive/folders/1P3uNgy4DKJBiENEL4OEtR2UdCTQ8sruZ?usp=sharing">
-                            Science
-                        </a>
-                    </h2><br>
-                    <h2 class="job-title">
-                        <i class="fa fa-wifi"></i><a href="https://drive.google.com/drive/folders/1sBwnxXc6mpLIsE2ekRWKjAxf7lBfVW6T?usp=sharing">
-                            Distance Learning
-                        </a>
-                    </h2><br>
-                    <h2 class="job-title">
-                        <i class="fa fa-pie-chart"></i><a href="https://drive.google.com/drive/folders/11YTa8dqdEn0OwUgIPLetI9PtU7yqrOlm?usp=sharing">
-                            Mathematics
-                        </a>
-                    </h2><br>
-                    <h2 class="job-title">
-                        <i class="fa fa-pencil"></i><a href="https://drive.google.com/drive/folders/1-uRe_DYiEdSh9E4hb-bHuR8wLV3V-kOl?usp=sharing">
-                            Connecticut Writing Project
-                        </a>
-                    </h2><br>
+                        /* Style the buttons inside the tab */
+                        .tab button {
+                            background-color: inherit;
+                            float: left;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            padding: 14px 16px;
+                            transition: 0.3s;
+                            font-size: 17px;
+                            color: #fff;
+                        }
 
+                            /* Change background color of buttons on hover */
+                            .tab button:hover {
+                                background-color: #fec892;
+                            }
 
-                </section>
+                            /* Create an active/current tablink class */
+                            .tab button.active {
+                                background-color: #cb8238;
+                            }
 
-                <!--//section-->            <!--//section-->            <!--//section-->            <!--//section-->
+                    /* Style the tab content */
+                    .tabcontent {
+                        display: none;
+                        padding: 6px 12px;
+                        border: 1px solid #97AAC3;
+                        border-top: none;
+                        background-color: #f5f5f5;
+                    }
+                </style>
+                </head>
+                <body>
 
+                    <h2>Welcome to my Website!</h2>
+                    <p>Click on the buttons inside the tabbed menu:</p>
 
-                <section class="section experiences-section">
-                    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+                    <div class="tab">
 
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Graduate Assistant</h3>
-                                <div class="time">September 2021 - Present</div>
-                            </div>
+                        <button class="tablinks" onclick="openTab(event, 'Meet Mindy')">Meet Mindy</button>
 
-                            <!--//upper-row-->
-                            <div class="company">Western Oregon University</div>
-                        </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Provided support in constructing and revamping Canvas course content for professors within the university./li>
-                                <li>
-                                    Ran and participated in Deep Dives and Workshops to support the department in guiding professors towards more active was to implement Canvas resources.
-                                </li>
-                                <li> Created Canvas course to support future Graduate Assistants in the future. </li>
-                            </ul>
-                        </div>
+                        <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+
+                        <button class="tablinks" onclick="openTab(event, 'Best Works')">Best Works</button>
+
+                        <button class="tablinks" onclick="openTab(event, 'Literature')">Literature</button>
+
+                        <button class="tablinks" onclick="openTab(event, 'ISTE Standards')">ISTE Standards</button>
+
                     </div>
 
-                    <!--//item-->
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Administrative Associate</h3>
-                                <div class="time">April 2021 - January 2023</div>
-                            </div>
-
-                            <!--//upper-row-->
-                            <div class="company">Braata Productions Non-for-Profit Organization</div>
-                        </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Correspond closely with clients from around the world to coordinate yearly events such as Carbites and Bankra.</li>
-                                <li>
-                                    Utilize digital management tools such as Asana and Airtable to organize tasks and effectively communicate with vendors and performers.
-                                </li>
-                                <li>Actively connect with members of the community to engage them in celebration of extraordinarily diverse traditions and cultural expressions of the Caribbean people.</li>
-                                <li>Create processes on how to utilize internal software for other teams within the company to follow as needed.</li>
-                            </ul>
-                        </div>
+                    <div id="Meet Mindy" class="tabcontent">
+                        <h3>More about Mindy...</h3>
+                        <p>Can be found in the follow page.</p>
                     </div>
 
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Freelance Producer</h3>
-                                <div class="time">April 2021 - August 2021</div>
-                            </div>
-
-                            <!--//upper-row-->
-                            <div class="company">Teach Starter, Inc.</div>
-                        </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Develop enrichment materials for teachers to utilize along side of their instruction.</li>
-                                <li>
-                                    Produce engaging objective-focused content on various digital platforms.
-                                </li>
-                                <li>Actively utilize feedback to ensure curriculum standards are supported. </li>
-                                <li>Knowledgeable on various State Standards such as CCSS, NGSS, and TEKS. </li>
-                            </ul>
-                        </div>
+                    <div id="Resume" class="tabcontent">
+                        <h3>Find Mindy's Resume</h3>
+                        <p>HERE.</p>
                     </div>
 
-                    <!--//item-->
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">2nd Grade Elementary Education Teacher</h3>
-                                <div class="time">August 2017 - March 2021</div>.
-                            </div>
+                    <div id="Best Works" class="tabcontent">
+                        <h3>Best Works</h3>
+                        <p>Read the title.</p>
+                    </div>
 
-                            <!--//upper-row-->
-                            <div class="company">Savin Rock Community School in West Haven, CT</div>
-                        </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Implemented and taught curriculum across all academic subjects.</li>
-                                <li>
-                                    Differentiated and modified instruction according to students' various academic needs.
-                                </li>
-                                <li>
-                                    Participated in extra curricular groups to plan, organize, and host school events such
-                                    as the Rockin' Holiday Festival and CANstruction.
-                                </li>
-                                <li>Designed virtual lesson plans for distance learning utilizing programs like Seesaw, Zoom, G Suite for Educators, Canva, and more.</li>
-                                <li> Co-leading and planning instructional materials for a multicultural committee that aims to organize opportunties for students to become more exposed to various cultures and diversify ways in which multicultural learning may occur within the general education curriculum. </li>
-                            </ul>
-                        </div>
+                    <div id="Literature" class="tabcontent">
+                        <h3>Literature</h3>
+                        <p>Get LIT.</p>
+                    </div>
+
+                    <div id="ISTE Standards" class="tabcontent">
+                        <h3>ISTE Standards</h3>
+                        <p>High standards. You know?</p>
                     </div>
 
 
+                    <script>function openTab(evt, tabName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(tabName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }</script>
+                    <!-- end of test code-->
 
-                    <!--//item-->
+                    <section class="section experiences-section">
+                        <h2 class="section-title"><i class="fa fa-star"></i>Portfolio Samples</h2>
 
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Lead Curriculum Design Intern</h3>
-                                <div class="time">December 2020 - March 2021</div>
-                            </div>
-                            <!--//upper-row-->
-                            <div class="company">
-                                C.H.O.Y.C.E.S. LLC
-                            </div>
+                        <div class="intro">
+                            <p>
+                                <i>
+                                    Below are samples of resources I've created and utilized within my classroom thrus far throughout my career as an educator. Please
+                                    feel free to download by clicking the links below!
+                                </i>
+                            </p>
                         </div>
-                        <!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Create, analyze, and critique units of study for social justice based lesson plans of multiple subject areas to help gradually construct a multicultural curriculum kit.</li>
-                                <li>Collaborate with a variety of departments on special projects to support on-going company events.</li>
-                                <li>Schedule and organize daily meetings and lead conversation to highlight the progress task based projects and further assist other departments.</li>
-                                <li>Mentor and train other curriculum design team members as they join the company to ensure they're advocated for and have a successful transition.</li>
-                            </ul>
-                        </div>
-                        <!--//details-->
-
-                        <div class="item">
-                            <div class="meta">
-                                <div class="upper-row">
-                                    <h3 class="job-title">Co-teacher</h3>
-                                    <div class="time">Summer of 2016, 2017, 2019, and 2020</div>
-                                </div>
-                                <!--//upper-row-->
-                                <div class="company">
-                                    Little Labs for Big Imaginations at Fairfield University, Fairfield CT
-                                </div>
-                            </div>
-                            <!--//meta-->
-                            <div class="details">
-                                <ul>
-                                    <li>
-                                        Created and implemented writing workshop lesson plans focusing on various writing
-                                        genres for students between grades 2 - 6.
-                                    </li>
-                                    <li>Designed and lead interactive live Zoom based lessons to help foster a collaborative and enriching virtual community.</li>
-                                    <li>
-                                        Integrated technological opportunities for students to showcase their mastery
-                                        and knowledge of skills.
-                                    </li>
-                                    <li>
-                                        Celebrated and showcased student work to fellow educators at a panel presentation at
-                                        NCTE 2018.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--//details-->
-                        </div>
-                        <!--//item-->
-
-                        <div class="item">
-                            <div class="meta">
-                                <div class="upper-row">
-                                    <h3 class="job-title">Graduate Intern</h3>
-                                    <div class="time">September 2016 - June 2017</div>
-                                </div>
-                                <!--//upper-row-->
-                                <div class="company">Stratford Academy Johnson House, Stratford CT</div>
-                            </div>
-                            <!--//meta-->
-                            <div class="details">
-                                <ul>
-                                    <li>Worked as a building intern and substitute in multiple grade levels.</li>
-                                    <li>Completed case study field work in a 3rd and 5th grade classroom.</li>
-                                    <li>
-                                        Preformed duties such as assisting classroom teachers in lesson planning, creating
-                                        bulletin boards, served as part-time/full-time coverage for teachers.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--//details-->
-                        </div>
-                        <!--//item-->
+                        <!--//intro-->
+                        <!-- Teaching Philosophy Link
+            <h2 class="job-title"><i class="fa fa-heart"></i><a
+                    href="https://docs.google.com/document/d/1HIapA3-VniaYZANCoFKGEl63O1COjt17JFG33111WLk/edit?usp=sharing">
+                    Philosophy</a></h2><br> -->
+                        <!-- Gallery Link
+            h2 class="job-title"><i class="fa fa-camera"></i><a
+                href="https://docs.google.com/document/d/1obXiZiReiU6XXLeaak8jIESYbVoP0_eX4NbfqCBY4lg/edit?usp=sharing">
+                Gallery</a></h2><br> -->
+                        <h2 class="job-title">
+                            <i class="fa fa-book"></i><a href="https://drive.google.com/drive/folders/1m0hQVw3Rn5-51w5J5TlmPgTKT4fIRZoF?usp=sharing">
+                                Literacy
+                            </a>
+                        </h2><br>
+                        <h2 class="job-title">
+                            <i class="fa fa-flask"></i><a href="https://drive.google.com/drive/folders/1P3uNgy4DKJBiENEL4OEtR2UdCTQ8sruZ?usp=sharing">
+                                Science
+                            </a>
+                        </h2><br>
+                        <h2 class="job-title">
+                            <i class="fa fa-wifi"></i><a href="https://drive.google.com/drive/folders/1sBwnxXc6mpLIsE2ekRWKjAxf7lBfVW6T?usp=sharing">
+                                Distance Learning
+                            </a>
+                        </h2><br>
+                        <h2 class="job-title">
+                            <i class="fa fa-pie-chart"></i><a href="https://drive.google.com/drive/folders/11YTa8dqdEn0OwUgIPLetI9PtU7yqrOlm?usp=sharing">
+                                Mathematics
+                            </a>
+                        </h2><br>
+                        <h2 class="job-title">
+                            <i class="fa fa-pencil"></i><a href="https://drive.google.com/drive/folders/1-uRe_DYiEdSh9E4hb-bHuR8wLV3V-kOl?usp=sharing">
+                                Connecticut Writing Project
+                            </a>
+                        </h2><br>
 
 
-                        <div class="item">
-                            <div class="meta">
-                                <div class="upper-row">
-                                    <h3 class="job-title">Student Teacher</h3>
-                                    <div class="time">January 2017 - May 2017</div>
-                                </div>
-                                <!--//upper-row-->
-                                <div class="company">Stratford Academy Johnson House, Stratford CT</div>
-                            </div>
-                            <!--//meta-->
-                            <div class="details">
-                                <ul>
-                                    <li>
-                                        Created, initiated, and differentiated for unit lesson plans using district curriculum
-                                        and guidelines in multiple subjects such as math, science, social studies, and
-                                        literacy.
-                                    </li>
-                                    <li>
-                                        Participated in faculty meetings and planning learning communities to build upon
-                                        teaching strategies and learn best practices.
-                                    </li>
-                                    <li>
-                                        Co-taught along side of cooperating teacher by planning unit lesson plans, working with
-                                        individual students, attending parent/ teacher conferences, and participating in
-                                        classroom instruction.
-                                    </li>
-                                    <li>
-                                        Assisted with grading, assessments, assignment-making, and engaged in administrative
-                                        practices.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--//details-->
-                        </div>
-                        <!--//item-->
+                    </section>
+
+                    <!--//section-->            <!--//section-->            <!--//section-->            <!--//section-->
+
+
+                    <section class="section experiences-section">
+                        <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
 
                         <div class="item">
                             <div class="meta">
                                 <div class="upper-row">
                                     <h3 class="job-title">Graduate Assistant</h3>
-                                    <div class="time">February 2017 - May 2017</div>
+                                    <div class="time">September 2021 - Present</div>
                                 </div>
+
                                 <!--//upper-row-->
-                                <div class="company">Fairfield University GSEAP, Fairfield CT</div>
+                                <div class="company">Western Oregon University</div>
                             </div>
                             <!--//meta-->
                             <div class="details">
                                 <ul>
+                                    <li>Provided support in constructing and revamping Canvas course content for professors within the university. </li>
                                     <li>
-                                        Assisted undergraduate Elementary Education candidates in applying for internship
-                                        placements and provided certification guidance.
+                                        Ran and participated in Deep Dives and Workshops to support the department in guiding professors towards more active was to implement Canvas resources.
                                     </li>
-                                    <li>
-                                        Attended Fairfield University's admitted students open house ceremony and represented
-                                        the elementary education program.
-                                    </li>
+                                    <li> Created Canvas course to support future Graduate Assistants in the future. </li>
                                 </ul>
                             </div>
-                            <!--//details-->
                         </div>
-                        <!--//item-->
 
+                        <!--//item-->
+                        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title">Administrative Associate</h3>
+                                    <div class="time">April 2021 - January 2023</div>
+                                </div>
+
+                                <!--//upper-row-->
+                                <div class="company">Braata Productions Non-for-Profit Organization</div>
+                            </div>
+                            <!--//meta-->
+                            <div class="details">
+                                <ul>
+                                    <li>Correspond closely with clients from around the world to coordinate yearly events such as Carbites and Bankra.</li>
+                                    <li>
+                                        Utilize digital management tools such as Asana and Airtable to organize tasks and effectively communicate with vendors and performers.
+                                    </li>
+                                    <li>Actively connect with members of the community to engage them in celebration of extraordinarily diverse traditions and cultural expressions of the Caribbean people.</li>
+                                    <li>Create processes on how to utilize internal software for other teams within the company to follow as needed.</li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <div class="item">
                             <div class="meta">
                                 <div class="upper-row">
-                                    <h3 class="job-title">Observational Fieldwork</h3>
-                                    <div class="time">January 2015 - May 2016</div>
+                                    <h3 class="job-title">Freelance Producer</h3>
+                                    <div class="time">April 2021 - August 2021</div>
                                 </div>
+
                                 <!--//upper-row-->
-                                <div class="company">Fairfield University, Fairfield CT</div>
+                                <div class="company">Teach Starter, Inc.</div>
                             </div>
                             <!--//meta-->
                             <div class="details">
                                 <ul>
+                                    <li>Develop enrichment materials for teachers to utilize along side of their instruction.</li>
                                     <li>
-                                        Worked as a classroom assistant at Cesar A. Batalla, Hall School, and Beardsley School.
+                                        Produce engaging objective-focused content on various digital platforms.
                                     </li>
-                                    <li>
-                                        Prepared educational activities, such as lesson plans, for groups of students in a
-                                        classroom setting.
-                                    </li>
+                                    <li>Actively utilize feedback to ensure curriculum standards are supported. </li>
+                                    <li>Knowledgeable on various State Standards such as CCSS, NGSS, and TEKS. </li>
                                 </ul>
                             </div>
-                            <!--//details-->
                         </div>
-                        <!--//item-->
 
+                        <!--//item-->
                         <div class="item">
                             <div class="meta">
                                 <div class="upper-row">
-                                    <h3 class="job-title">Private Elementary Tutor</h3>
-                                    <div class="time">January 2015 - February 2016</div>
+                                    <h3 class="job-title">2nd Grade Elementary Education Teacher</h3>
+                                    <div class="time">August 2017 - March 2021</div>.
                                 </div>
-                                <!--//upper-row-->
-                                <div class="company">Fairfield County Areas, CT</div>
-                            </div>
-                            <!--//meta-->
-                            <div class="details">
-                                <ul>
-                                    <li>
-                                        Assisted students in completion of assignments covering topics such as reading,
-                                        writing, math, and sciences.
-                                    </li>
-                                    <li>
-                                        Created educational and positive learning environment to aid students' concentration.
-                                    </li>
-                                    <li>Coordinate with parents to provide custom assignments tailored to students' needs.</li>
-                                </ul>
-                            </div>
-                            <!--//details-->
-                        </div>
-                        <!--//item-->
 
-                        <div class="item">
-                            <div class="meta">
-                                <div class="upper-row">
-                                    <h3 class="job-title">Classroom Assistant for Horizons National</h3>
-                                    <div class="time">June 2015 - August 2015</div>
-                                </div>
                                 <!--//upper-row-->
-                                <div class="company">Greens Farms Academy, Westport CT</div>
+                                <div class="company">Savin Rock Community School in West Haven, CT</div>
                             </div>
                             <!--//meta-->
                             <div class="details">
                                 <ul>
+                                    <li>Implemented and taught curriculum across all academic subjects.</li>
                                     <li>
-                                        Volunteered at Green Farm Academy's six week program to assist students in academics
-                                        such as reading, writing, and math.
+                                        Differentiated and modified instruction according to students' various academic needs.
                                     </li>
-                                    <li>Worked with pre-school students and prepared them for upcoming academic year.</li>
                                     <li>
-                                        Participated in one-on-one sessions to help ELL students integrate with their fellow
-                                        peers, both academically and socially.
+                                        Participated in extra curricular groups to plan, organize, and host school events such
+                                        as the Rockin' Holiday Festival and CANstruction.
                                     </li>
+                                    <li>Designed virtual lesson plans for distance learning utilizing programs like Seesaw, Zoom, G Suite for Educators, Canva, and more.</li>
+                                    <li> Co-leading and planning instructional materials for a multicultural committee that aims to organize opportunties for students to become more exposed to various cultures and diversify ways in which multicultural learning may occur within the general education curriculum. </li>
                                 </ul>
                             </div>
-                            <!--//details-->
                         </div>
+
+
+
                         <!--//item-->
 
                         <div class="item">
                             <div class="meta">
                                 <div class="upper-row">
-                                    <h3 class="job-title">Action for Bridgeport Community Development</h3>
-                                    <div class="time">June 2015 - August 2015</div>
+                                    <h3 class="job-title">Lead Curriculum Design Intern</h3>
+                                    <div class="time">December 2020 - March 2021</div>
                                 </div>
                                 <!--//upper-row-->
-                                <div class="company">Park Avenue Headstart, Bridgeport CT</div>
+                                <div class="company">
+                                    C.H.O.Y.C.E.S. LLC
+                                </div>
                             </div>
                             <!--//meta-->
                             <div class="details">
                                 <ul>
-                                    <li>Volunteered in the Headstart educational program for inner-city children.</li>
-                                    <li>
-                                        Helping students prepare for school by working on each child's social, emotional,
-                                        cognitive, and physical skills through high quality education.
-                                    </li>
+                                    <li>Create, analyze, and critique units of study for social justice based lesson plans of multiple subject areas to help gradually construct a multicultural curriculum kit.</li>
+                                    <li>Collaborate with a variety of departments on special projects to support on-going company events.</li>
+                                    <li>Schedule and organize daily meetings and lead conversation to highlight the progress task based projects and further assist other departments.</li>
+                                    <li>Mentor and train other curriculum design team members as they join the company to ensure they're advocated for and have a successful transition.</li>
                                 </ul>
                             </div>
                             <!--//details-->
-                        </div>
-                        <!--//item-->
 
-                        <div class="item">
-                            <div class="meta">
-                                <div class="upper-row">
-                                    <h3 class="job-title">Computer Science Tutor</h3>
-                                    <div class="time">September 2013 - May 2014</div>
-                                </div>
-                                <!--//upper-row-->
-                                <div class="company">Fairfield County Areas, CT</div>
-                            </div>
-                            <!--//meta-->
-                            <div class="details">
-                                <ul>
-                                    <li>Explained advanced computer science topics to students in an easy-to-digest manner.</li>
-                                    <li>Reviewed student's programming assignments and ordered feedback for improvement.</li>
-                                    <li>Provided example problems for students' preparation for exams.</li>
-                                </ul>
-                            </div>
-                            <!--//details-->
-                        </div>
-                        <!--//item-->
-
-                        <div class="item">
-                            <div class="meta">
-                                <div class="upper-row">
-                                    <h3 class="job-title">General Manager</h3>
-                                    <div class="time">June 2012 - 2020</div>
-                                </div>
-                                <!--//upper-row-->
-                                <div class="company">Mindy K Deli & Catering, Old Saybrook CT</div>
-                            </div>
-                            <!--//meta-->
-                            <div class="details">
-                                <ul>
-                                    <li>
-                                        Scheduled employee work times and business events, as well as schedule and preform
-                                        interviews for potential employees.
-                                    </li>
-                                    <li>Oversaw employee during work hours to ensure customer satisfaction.</li>
-                                    <li>Purchased and organized business culinary supplies and services.</li>
-                                </ul>
-                            </div>
-                            <!--//details-->
-                        </div>
-                        <!--//item-->
-                </section>
-                <!--//section-->
-
-                <section class="section projects-section">
-                    <h2 class="section-title"><i class="fa fa-certificate"></i>Certifications and Workshops</h2>
-
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Provisional Connecticut Teaching Certification Grades K-6</h3>
-                                <div class="time">July 2020</div>
-                            </div>
-                            <!--//upper-row-->
-                            <div class="company">Fairfield University</div>
-                        </div>
-                        <!--//meta-->
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-
-                                <div class="item">
-                                    <div class="meta">
-                                        <div class="upper-row">
-                                            <h3 class="job-title">Reciprocal Oregon Teaching Certification Grades K-6</h3>
-                                            <div class="time">June 2021</div>
-                                        </div>
-                                        <!--//upper-row-->
-                                        <div class="company">TSPC</div>
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Co-teacher</h3>
+                                        <div class="time">Summer of 2016, 2017, 2019, and 2020</div>
                                     </div>
-                                    <!--//meta-->
-                                </div>
-                                <!--//item-->
-                                <div class="item">
-                                    <div class="meta">
-                                        <div class="upper-row">
-
-                                            <h3 class="job-title">Google Educator Certification Level 1</h3>
-                                            <div class="time">Anticipated</div>
-                                        </div>
-                                        <div class="company">Google for Education</div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="meta">
-                                            <div class="upper-row">
-                                                <h3 class="job-title">National Convention for Teachers and Educators</h3>
-                                                <div class="time">Fall 2018</div>
-                                            </div>
-                                            <!--//upper-row-->
-                                            <div class="company">Fairfield University's Connecticut Writing Project</div>
-                                        </div>
-                                        <!--//meta-->
-                                    </div>
-                                    <!--//item-->
-
-                                    <div class="item">
-                                        <div class="meta">
-                                            <div class="upper-row">
-                                                <h3 class="job-title">Crisis Behavioral Management</h3>
-                                                <div class="time">Spring 2017</div>
-                                            </div>
-                                            <!--//upper-row-->
-                                            <div class="company">Stratford Academy Johnson House</div>
-                                        </div>
-                                        <!--//meta-->
-                                    </div>
-                                    <!--//item-->
-                                    <!--
-                                    <div class="item">
-                                        <div class="meta">
-                                            <div class="upper-row">
-                                                <h3 class="job-title">Adult/ Child CPR Certification and Training</h3>
-                                                <div class="time">Fall 2016</div>
-                                            </div>
-
-                                          -->
                                     <!--//upper-row-->
-                                    <!--
-                                                            <div class="company">Stratford Academy Johnson House</div>
-                                                        </div>
-                                                    </div>
-                                    -->
-                                    <!--
+                                    <div class="company">
+                                        Little Labs for Big Imaginations at Fairfield University, Fairfield CT
+                                    </div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Created and implemented writing workshop lesson plans focusing on various writing
+                                            genres for students between grades 2 - 6.
+                                        </li>
+                                        <li>Designed and lead interactive live Zoom based lessons to help foster a collaborative and enriching virtual community.</li>
+                                        <li>
+                                            Integrated technological opportunities for students to showcase their mastery
+                                            and knowledge of skills.
+                                        </li>
+                                        <li>
+                                            Celebrated and showcased student work to fellow educators at a panel presentation at
+                                            NCTE 2018.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Graduate Intern</h3>
+                                        <div class="time">September 2016 - June 2017</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Stratford Academy Johnson House, Stratford CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>Worked as a building intern and substitute in multiple grade levels.</li>
+                                        <li>Completed case study field work in a 3rd and 5th grade classroom.</li>
+                                        <li>
+                                            Preformed duties such as assisting classroom teachers in lesson planning, creating
+                                            bulletin boards, served as part-time/full-time coverage for teachers.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Student Teacher</h3>
+                                        <div class="time">January 2017 - May 2017</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Stratford Academy Johnson House, Stratford CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Created, initiated, and differentiated for unit lesson plans using district curriculum
+                                            and guidelines in multiple subjects such as math, science, social studies, and
+                                            literacy.
+                                        </li>
+                                        <li>
+                                            Participated in faculty meetings and planning learning communities to build upon
+                                            teaching strategies and learn best practices.
+                                        </li>
+                                        <li>
+                                            Co-taught along side of cooperating teacher by planning unit lesson plans, working with
+                                            individual students, attending parent/ teacher conferences, and participating in
+                                            classroom instruction.
+                                        </li>
+                                        <li>
+                                            Assisted with grading, assessments, assignment-making, and engaged in administrative
+                                            practices.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Graduate Assistant</h3>
+                                        <div class="time">February 2017 - May 2017</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Fairfield University GSEAP, Fairfield CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Assisted undergraduate Elementary Education candidates in applying for internship
+                                            placements and provided certification guidance.
+                                        </li>
+                                        <li>
+                                            Attended Fairfield University's admitted students open house ceremony and represented
+                                            the elementary education program.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Observational Fieldwork</h3>
+                                        <div class="time">January 2015 - May 2016</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Fairfield University, Fairfield CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Worked as a classroom assistant at Cesar A. Batalla, Hall School, and Beardsley School.
+                                        </li>
+                                        <li>
+                                            Prepared educational activities, such as lesson plans, for groups of students in a
+                                            classroom setting.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Private Elementary Tutor</h3>
+                                        <div class="time">January 2015 - February 2016</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Fairfield County Areas, CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Assisted students in completion of assignments covering topics such as reading,
+                                            writing, math, and sciences.
+                                        </li>
+                                        <li>
+                                            Created educational and positive learning environment to aid students' concentration.
+                                        </li>
+                                        <li>Coordinate with parents to provide custom assignments tailored to students' needs.</li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Classroom Assistant for Horizons National</h3>
+                                        <div class="time">June 2015 - August 2015</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Greens Farms Academy, Westport CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Volunteered at Green Farm Academy's six week program to assist students in academics
+                                            such as reading, writing, and math.
+                                        </li>
+                                        <li>Worked with pre-school students and prepared them for upcoming academic year.</li>
+                                        <li>
+                                            Participated in one-on-one sessions to help ELL students integrate with their fellow
+                                            peers, both academically and socially.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Action for Bridgeport Community Development</h3>
+                                        <div class="time">June 2015 - August 2015</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Park Avenue Headstart, Bridgeport CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>Volunteered in the Headstart educational program for inner-city children.</li>
+                                        <li>
+                                            Helping students prepare for school by working on each child's social, emotional,
+                                            cognitive, and physical skills through high quality education.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Computer Science Tutor</h3>
+                                        <div class="time">September 2013 - May 2014</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Fairfield County Areas, CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>Explained advanced computer science topics to students in an easy-to-digest manner.</li>
+                                        <li>Reviewed student's programming assignments and ordered feedback for improvement.</li>
+                                        <li>Provided example problems for students' preparation for exams.</li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">General Manager</h3>
+                                        <div class="time">June 2012 - 2020</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">Mindy K Deli & Catering, Old Saybrook CT</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            Scheduled employee work times and business events, as well as schedule and preform
+                                            interviews for potential employees.
+                                        </li>
+                                        <li>Oversaw employee during work hours to ensure customer satisfaction.</li>
+                                        <li>Purchased and organized business culinary supplies and services.</li>
+                                    </ul>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+                    </section>
+                    <!--//section-->
+
+                    <section class="section projects-section">
+                        <h2 class="section-title"><i class="fa fa-certificate"></i>Certifications and Workshops</h2>
+
+                        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title">Provisional Connecticut Teaching Certification Grades K-6</h3>
+                                    <div class="time">July 2020</div>
+                                </div>
+                                <!--//upper-row-->
+                                <div class="company">Fairfield University</div>
+                            </div>
+                            <!--//meta-->
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+
                                     <div class="item">
                                         <div class="meta">
                                             <div class="upper-row">
-                                                <h3 class="job-title">Adult/ Child First Aid Certification and Training</h3>
-                                                <div class="time">Fall 2016</div>
+                                                <h3 class="job-title">Reciprocal Oregon Teaching Certification Grades K-6</h3>
+                                                <div class="time">June 2021</div>
                                             </div>
-                                          -->
-                                    <!--
-                                            <div class="company">Stratford Academy Johnson House</div>
+                                            <!--//upper-row-->
+                                            <div class="company">TSPC</div>
                                         </div>
-                                    </div> -->
+                                        <!--//meta-->
+                                    </div>
+                                    <!--//item-->
+                                    <div class="item">
+                                        <div class="meta">
+                                            <div class="upper-row">
 
+                                                <h3 class="job-title">Google Educator Certification Level 1</h3>
+                                                <div class="time">Anticipated</div>
+                                            </div>
+                                            <div class="company">Google for Education</div>
+                                        </div>
 
-                </section>
-                <!--//section-->
+                                        <div class="item">
+                                            <div class="meta">
+                                                <div class="upper-row">
+                                                    <h3 class="job-title">National Convention for Teachers and Educators</h3>
+                                                    <div class="time">Fall 2018</div>
+                                                </div>
+                                                <!--//upper-row-->
+                                                <div class="company">Fairfield University's Connecticut Writing Project</div>
+                                            </div>
+                                            <!--//meta-->
+                                        </div>
+                                        <!--//item-->
 
+                                        <div class="item">
+                                            <div class="meta">
+                                                <div class="upper-row">
+                                                    <h3 class="job-title">Crisis Behavioral Management</h3>
+                                                    <div class="time">Spring 2017</div>
+                                                </div>
+                                                <!--//upper-row-->
+                                                <div class="company">Stratford Academy Johnson House</div>
+                                            </div>
+                                            <!--//meta-->
+                                        </div>
+                                        <!--//item-->
+                                        <!--
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Adult/ Child CPR Certification and Training</h3>
+                                        <div class="time">Fall 2016</div>
+                                    </div>
 
-                <section class="section projects-section">
-                    <h2 class="section-title"><i class="fa fa-users"></i>Community Involvement</h2>
-
-                    <div class="item">
-                        <span class="project-title"> <b>Organizations at Savin Rock Community School</b></span><br>
-                        <span class="project-tagline">
-                            <i>
-                                An active lead member of the Multicultural Curriculm Committee.
-                                Also involved with planning, organizing, and participating in holiday school fundraisers, such as the Savin Rock Rockin' Holiday Festival and Trick or Treat Street.
-                            </i>
-                        </span>
-                    </div>
-
-                    <div class="item">
-                        <span class="project-title"><b>Organizations at Stratford Academy Johnson House</b></span><br>
-                        <span class="project-tagline">
-                            <i>
-                                Actively participated in Stratford Academy's Positive Behavior
-                                Intervention School (PBIS) committee. Helped plan and organize "College to Career" week at
-                                Stratford Academy Johnson House.
-                            </i>
-                        </span>
-                    </div>
-                    <!--//item-->
-                    <!--<div class="item">
-                        <span class="project-title">Commuter Student Association</span><br>
-                        <span class="project-tagline">Active member and representative in the Commuter Student Association.
-                            Planned, organized, and managed club events to promote commuter relations with university
-                            residents.</span>
-                    </div>
-                    <!//item-->
-
-                    <div class="item">
-                        <span class="project-title"><b>School Building Project in Laos</b></span><br>
-                        <span class="project-tagline">
-                            <i>
-                                Ran a fundraiser to raise awareness and money for the education of
-                                underprivileged children in Laos. Donated basic school supplies to children and organized the
-                                establishment of a school building.
-                            </i>
-                        </span>
-                    </div>
-                    <!--//item-->
-
-                </section>
-                <!--//section-->
-
-                <section class="skills-section section">
-                    <h2 class="section-title"><i class="fa fa-code"></i>Technical Coding Skills &amp; Proficiency</h2>
-                    <div class="skillset">
-                        <div class="item">
-                            <h3 class="level-title">HTML &amp; CSS</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="98%">
+                                  -->
+                                        <!--//upper-row-->
+                                        <!--
+                                                    <div class="company">Stratford Academy Johnson House</div>
+                                                </div>
+                                            </div>
+                            -->
+                                        <!--
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Adult/ Child First Aid Certification and Training</h3>
+                                        <div class="time">Fall 2016</div>
+                                    </div>
+                                  -->
+                                        <!--
+                                    <div class="company">Stratford Academy Johnson House</div>
                                 </div>
-                            </div>
-                            <!--//level-bar-->
+                            </div> -->
+
+
+                    </section>
+                    <!--//section-->
+
+
+                    <section class="section projects-section">
+                        <h2 class="section-title"><i class="fa fa-users"></i>Community Involvement</h2>
+
+                        <div class="item">
+                            <span class="project-title"> <b>Organizations at Savin Rock Community School</b></span><br>
+                            <span class="project-tagline">
+                                <i>
+                                    An active lead member of the Multicultural Curriculm Committee.
+                                    Also involved with planning, organizing, and participating in holiday school fundraisers, such as the Savin Rock Rockin' Holiday Festival and Trick or Treat Street.
+                                </i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <span class="project-title"><b>Organizations at Stratford Academy Johnson House</b></span><br>
+                            <span class="project-tagline">
+                                <i>
+                                    Actively participated in Stratford Academy's Positive Behavior
+                                    Intervention School (PBIS) committee. Helped plan and organize "College to Career" week at
+                                    Stratford Academy Johnson House.
+                                </i>
+                            </span>
+                        </div>
+                        <!--//item-->
+                        <!--<div class="item">
+                <span class="project-title">Commuter Student Association</span><br>
+                <span class="project-tagline">Active member and representative in the Commuter Student Association.
+                    Planned, organized, and managed club events to promote commuter relations with university
+                    residents.</span>
+            </div>
+            <!//item-->
+
+                        <div class="item">
+                            <span class="project-title"><b>School Building Project in Laos</b></span><br>
+                            <span class="project-tagline">
+                                <i>
+                                    Ran a fundraiser to raise awareness and money for the education of
+                                    underprivileged children in Laos. Donated basic school supplies to children and organized the
+                                    establishment of a school building.
+                                </i>
+                            </span>
                         </div>
                         <!--//item-->
 
-                        <div class="item">
-                            <h3 class="level-title">Javascript</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="50%">
-                                </div>
-                            </div>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
+                    </section>
+                    <!--//section-->
 
-                        <div class="item">
-                            <h3 class="level-title">Haskell</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="50%">
-                                </div>
-                            </div>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-
-                        <div class="item">
-                            <h3 class="level-title">Python</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="75%">
-                                </div>
-                            </div>
-                            <!--//level-bar-->
-                        </div>
-                        <!--//item-->
-                        <h2 class="section-title"><i class="fa fa-laptop"></i>Educational Software Skills &amp; Proficiency</h2>
+                    <section class="skills-section section">
+                        <h2 class="section-title"><i class="fa fa-code"></i>Technical Coding Skills &amp; Proficiency</h2>
                         <div class="skillset">
                             <div class="item">
-                                <h3 class="level-title">Seesaw</h3>
+                                <h3 class="level-title">HTML &amp; CSS</h3>
                                 <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="100%">
+                                    <div class="level-bar-inner" data-level="98%">
                                     </div>
                                 </div>
                                 <!--//level-bar-->
@@ -872,9 +832,9 @@
                             <!--//item-->
 
                             <div class="item">
-                                <h3 class="level-title">G Suite for Education</h3>
+                                <h3 class="level-title">Javascript</h3>
                                 <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="90%">
+                                    <div class="level-bar-inner" data-level="50%">
                                     </div>
                                 </div>
                                 <!--//level-bar-->
@@ -882,7 +842,17 @@
                             <!--//item-->
 
                             <div class="item">
-                                <h3 class="level-title">Microsoft Office</h3>
+                                <h3 class="level-title">Haskell</h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="50%">
+                                    </div>
+                                </div>
+                                <!--//level-bar-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Python</h3>
                                 <div class="level-bar">
                                     <div class="level-bar-inner" data-level="75%">
                                     </div>
@@ -890,54 +860,85 @@
                                 <!--//level-bar-->
                             </div>
                             <!--//item-->
-
-                            <div class="item">
-                                <h3 class="level-title">Canva</h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="90%">
+                            <h2 class="section-title"><i class="fa fa-laptop"></i>Educational Software Skills &amp; Proficiency</h2>
+                            <div class="skillset">
+                                <div class="item">
+                                    <h3 class="level-title">Seesaw</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="100%">
+                                        </div>
                                     </div>
+                                    <!--//level-bar-->
                                 </div>
-                                <!--//level-bar-->
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="level-title">Adobe Creative Cloud</h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="80%">
-                                    </div>
-                                </div>
-                                <!--//level-bar-->
                                 <!--//item-->
-                            </div>
-                        </div>
 
-                    </div>
-                </section>
-                <!--//skills-section-->
+                                <div class="item">
+                                    <h3 class="level-title">G Suite for Education</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
 
-                <h2 class="section-title"><i class="fa fa-calendar"></i>Project Management Application Skills  &amp; Proficiency</h2>
-                <div class="skillset">
-                    <div class="item">
-                        <h3 class="level-title">AirTable</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
+                                <div class="item">
+                                    <h3 class="level-title">Microsoft Office</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Canva</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">Adobe Creative Cloud</h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                    <!--//item-->
+                                </div>
                             </div>
+
                         </div>
+                    </section>
+                    <!--//skills-section-->
+
+                    <h2 class="section-title"><i class="fa fa-calendar"></i>Project Management Application Skills  &amp; Proficiency</h2>
+                    <div class="skillset">
+                        <div class="item">
+                            <h3 class="level-title">AirTable</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="90%">
+                                </div>
+                            </div>
+                            <!--//level-bar-->
+                        </div>
+                        <!--//item-->
+
+                        <div class="item">
+                            <h3 class="level-title">Asana</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="75%">
+                                </div>
+                            </div>
+                            <!--//level-bar-->
+                        </div>
+                        <!--//item-->
                         <!--//level-bar-->
                     </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Asana</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="75%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-                    <!--//level-bar-->
-                </div>
             </div>
 
         </div>
