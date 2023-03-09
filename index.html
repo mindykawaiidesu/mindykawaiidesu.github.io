@@ -31,199 +31,204 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <div class="sidebar-wrapper">
-                <div class="profile-container">
-                    <img class="profile" src="assets/images/profile.png" alt="" />
-                    <h1 class="name">Mindy Khamvongsa</h1>
-                    <h3 class="tagline"><em>they/she</em></h3> <i class="fa fa-venus"></i>
-                    <!--                <h4 class= "meta"> Hello!
+
+        <!-- START OF ACTUAL CODE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Roboto;
+            }
+
+            /* Style the tab */
+            .tab {
+                overflow: hidden;
+                border: 1px solid #545E6C; /* Border for entire tab section color*/
+                background-color: #FDA246;
+                /* Actual tab color */
+            }
+
+                /* Style the buttons inside the tab */
+                .tab button {
+                    background-color: inherit;
+                    float: left;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 14px 16px;
+                    transition: 0.3s;
+                    font-size: 17px;
+                    color: #fff;
+                }
+
+                    /* Change background color of buttons on hover */
+                    .tab button:hover {
+                        background-color: #fec892;
+                    }
+
+                    /* Create an active/current tablink class */
+                    .tab button.active {
+                        background-color: #cb8238;
+                    }
+
+            /* Style the tab content */
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #97AAC3;
+                border-top: none;
+                background-color: #f5f5f5;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <h2>Welcome to my Website!</h2>
+            <p>Click on the buttons inside the tabbed menu:</p>
+
+            <div class="tab">
+
+                <button class="tablinks" onclick="openTab(event, 'Meet Mindy')">Meet Mindy</button>
+
+                <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+
+                <button class="tablinks" onclick="openTab(event, 'Best Works')">Best Works</button>
+
+                <button class="tablinks" onclick="openTab(event, 'Literature')">Literature</button>
+
+                <button class="tablinks" onclick="openTab(event, 'ISTE Standards')">ISTE Standards</button>
+
+            </div>
+
+            <div id="Meet Mindy" class="tabcontent">
+                <h3>More about Mindy...</h3>
+                <p>Can be found in the follow page.</p>
+            </div>
+
+            <div id="Resume" class="tabcontent">
+                <h3>Find Mindy's Resume</h3>
+                <p>HERE.</p>
+            </div>
+
+            <div id="Best Works" class="tabcontent">
+                <h3>Best Works</h3>
+                <p>Read the title.</p>
+            </div>
+
+            <div id="Literature" class="tabcontent">
+                <h3>Literature</h3>
+                <p>Get LIT.</p>
+            </div>
+
+            <div id="ISTE Standards" class="tabcontent">
+                <h3>ISTE Standards</h3>
+                <p>High standards. You know?</p>
+            </div>
+
+
+            <script>function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }</script>
+            <!-- end of test code-->
+
+        </body>
+
+        <body>
+            <div class="wrapper">
+                <div class="sidebar-wrapper">
+                    <div class="profile-container">
+                        <img class="profile" src="assets/images/profile.png" alt="" />
+                        <h1 class="name">Mindy Khamvongsa</h1>
+                        <h3 class="tagline"><em>they/she</em></h3> <i class="fa fa-venus"></i>
+                        <!--                <h4 class= "meta"> Hello!
 
                     Thank you so much for stopping by my website.
 
                     My name is Mindy Khamvongsa and I am currently an elementary education teacher in Connecticut. If you have any questions about my work experiences and would let to get in contact with me, please feel free. I look forward to hearing from you and I hope you have a wonderful day!
                     </h4> -->
+                    </div>
+                    <!--//profile-container-->
+
+                    <div class="contact-container container-block">
+                        <h2 class="container-block-title">Contact Me</h2>
+                        <ul class="list-unstyled contact-list">
+                            <li class="email">
+                                <i class="fa fa-paper-plane-o"></i><a href="mailto:missmindykhamvongsa@gmail.com">Email Me!</a>
+                            </li>
+                            <li class="phone"><i class="fa fa-phone"></i><a href="tel:929-498-1548">929-498-1548</a></li>
+                            <li class="linkedin">
+                                <i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/missmindykay">
+                                    my Linkedin!
+                                </a>
+                            </li>
+
+                            <!-- <li class="website"><i class="fa fa-globe"></i><a href="www.todo.com" target="_blank">www.todo.com</a></li>-->
+                            <!-- <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/alandoe</a></li>-->
+                            <!-- <li class="github"><i class="fa fa-github"></i><a href="#" target="_blank">github.com/username</a></li>-->
+                            <!-- <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>-->
+                        </ul>
+                    </div>
+                    <!--//contact-container-->
+                    <div class="education-container container-block">
+                        <h2 class="container-block-title">Education</h2>
+                        <div class="item">
+                            <h4 class="degree">MA in Elementary Education</h4>
+                            <h5 class="meta">Fairfield University</h5>
+                            <div class="time">2016 - 2017</div>
+                        </div>
+                        <!--//item-->
+                        <div class="item">
+                            <h4 class="degree">BA in Psychology</h4>
+                            <h5 class="meta">Fairfield University</h5>
+                            <div class="time">2012 - 2016</div>
+                        </div>
+                        <!--//item-->
+                    </div>
+                    <!--//education-container-->
+
+                    <div class="languages-container container-block">
+                        <h2 class="container-block-title">Languages</h2>
+                        <ul class="list-unstyled interests-list">
+                            <li>English <span class="lang-desc">(Native)</span></li>
+                            <li>Thai <span class="lang-desc">(Conversational)</span></li>
+                            <li>Laotian <span class="lang-desc">(Conversational)</span></li>
+                        </ul>
+                    </div>
+                    <!--//interests-->
+
+                    <div class="interests-container container-block">
+                        <h2 class="container-block-title">Interests</h2>
+                        <ul class="list-unstyled interests-list">
+                            <li>Multicultural and Inclusive Education</li>
+                            <li>E-Learning & Technology</li>
+                            <li>Social Justice</li>
+                            <li>Curriculum Design</li>
+                        </ul>
+                    </div>
+                    <!--//interests-->
+
                 </div>
-                <!--//profile-container-->
+                <!--//sidebar-wrapper-->
 
-                <div class="contact-container container-block">
-                    <h2 class="container-block-title">Contact Me</h2>
-                    <ul class="list-unstyled contact-list">
-                        <li class="email">
-                            <i class="fa fa-paper-plane-o"></i><a href="mailto:missmindykhamvongsa@gmail.com">Email Me!</a>
-                        </li>
-                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:929-498-1548">929-498-1548</a></li>
-                        <li class="linkedin">
-                            <i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/missmindykay">
-                                my Linkedin!
-                            </a>
-                        </li>
+                <div class="main-wrapper">
 
-
-                        <!-- <li class="website"><i class="fa fa-globe"></i><a href="www.todo.com" target="_blank">www.todo.com</a></li>-->
-                        <!-- <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/alandoe</a></li>-->
-                        <!-- <li class="github"><i class="fa fa-github"></i><a href="#" target="_blank">github.com/username</a></li>-->
-                        <!-- <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>-->
-                    </ul>
-                </div>
-                <!--//contact-container-->
-                <div class="education-container container-block">
-                    <h2 class="container-block-title">Education</h2>
-                    <div class="item">
-                        <h4 class="degree">MA in Elementary Education</h4>
-                        <h5 class="meta">Fairfield University</h5>
-                        <div class="time">2016 - 2017</div>
-                    </div>
-                    <!--//item-->
-                    <div class="item">
-                        <h4 class="degree">BA in Psychology</h4>
-                        <h5 class="meta">Fairfield University</h5>
-                        <div class="time">2012 - 2016</div>
-                    </div>
-                    <!--//item-->
-                </div>
-                <!--//education-container-->
-
-                <div class="languages-container container-block">
-                    <h2 class="container-block-title">Languages</h2>
-                    <ul class="list-unstyled interests-list">
-                        <li>English <span class="lang-desc">(Native)</span></li>
-                        <li>Thai <span class="lang-desc">(Conversational)</span></li>
-                        <li>Laotian <span class="lang-desc">(Conversational)</span></li>
-                    </ul>
-                </div>
-                <!--//interests-->
-
-                <div class="interests-container container-block">
-                    <h2 class="container-block-title">Interests</h2>
-                    <ul class="list-unstyled interests-list">
-                        <li>Multicultural and Inclusive Education</li>
-                        <li>E-Learning & Technology</li>
-                        <li>Social Justice</li>
-                        <li>Curriculum Design</li>
-                    </ul>
-                </div>
-                <!--//interests-->
-
-            </div>
-            <!--//sidebar-wrapper-->
-
-            <div class="main-wrapper">
-
-                <!-- Commenting out summary section -->
-                <!-- <section class="section summary-section"> -->
-                <!-- <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2> -->
-                <!-- <div class="summary"> -->
-                <!-- <p> Hello my name is Mindy Khamvongsa and I am a graduate of Fairfield University’s teaching preparation program. Throughout my teaching experience in the kindergarten through sixth-grade level in both urban and suburban school districts. Having a vast background with working in such diverse environments. I have recently completed my Master of Arts in Elementary Education and have successfully passed my PRAXIS I and Foundations of Reading. With that said, I am currently in the process of finalizing the remaining pieces left for my Connecticut Teaching Certification and hope to have everything in order by mid-summer.</p> -->
-                <!-- </div>-->
-                <!-- </section>-->
-                <!-- START OF ACTUAL CODE-->
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <style>
-                    body {
-                        font-family: Roboto;
-                    }
-
-                    /* Style the tab */
-                    .tab {
-                        overflow: hidden;
-                        border: 1px solid #545E6C; /* Border for entire tab section color*/
-                        background-color: #FDA246;
-                        /* Actual tab color */
-                    }
-
-                        /* Style the buttons inside the tab */
-                        .tab button {
-                            background-color: inherit;
-                            float: left;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                            padding: 14px 16px;
-                            transition: 0.3s;
-                            font-size: 17px;
-                            color: #fff;
-                        }
-
-                            /* Change background color of buttons on hover */
-                            .tab button:hover {
-                                background-color: #fec892;
-                            }
-
-                            /* Create an active/current tablink class */
-                            .tab button.active {
-                                background-color: #cb8238;
-                            }
-
-                    /* Style the tab content */
-                    .tabcontent {
-                        display: none;
-                        padding: 6px 12px;
-                        border: 1px solid #97AAC3;
-                        border-top: none;
-                        background-color: #f5f5f5;
-                    }
-                </style>
-                </head>
-                <body>
-
-                    <h2>Welcome to my Website!</h2>
-                    <p>Click on the buttons inside the tabbed menu:</p>
-
-                    <div class="tab">
-
-                        <button class="tablinks" onclick="openTab(event, 'Meet Mindy')">Meet Mindy</button>
-
-                        <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
-
-                        <button class="tablinks" onclick="openTab(event, 'Best Works')">Best Works</button>
-
-                        <button class="tablinks" onclick="openTab(event, 'Literature')">Literature</button>
-
-                        <button class="tablinks" onclick="openTab(event, 'ISTE Standards')">ISTE Standards</button>
-
-                    </div>
-
-                    <div id="Meet Mindy" class="tabcontent">
-                        <h3>More about Mindy...</h3>
-                        <p>Can be found in the follow page.</p>
-                    </div>
-
-                    <div id="Resume" class="tabcontent">
-                        <h3>Find Mindy's Resume</h3>
-                        <p>HERE.</p>
-                    </div>
-
-                    <div id="Best Works" class="tabcontent">
-                        <h3>Best Works</h3>
-                        <p>Read the title.</p>
-                    </div>
-
-                    <div id="Literature" class="tabcontent">
-                        <h3>Literature</h3>
-                        <p>Get LIT.</p>
-                    </div>
-
-                    <div id="ISTE Standards" class="tabcontent">
-                        <h3>ISTE Standards</h3>
-                        <p>High standards. You know?</p>
-                    </div>
-
-
-                    <script>function openTab(evt, tabName) {
-                            var i, tabcontent, tablinks;
-                            tabcontent = document.getElementsByClassName("tabcontent");
-                            for (i = 0; i < tabcontent.length; i++) {
-                                tabcontent[i].style.display = "none";
-                            }
-                            tablinks = document.getElementsByClassName("tablinks");
-                            for (i = 0; i < tablinks.length; i++) {
-                                tablinks[i].className = tablinks[i].className.replace(" active", "");
-                            }
-                            document.getElementById(tabName).style.display = "block";
-                            evt.currentTarget.className += " active";
-                        }</script>
-                    <!-- end of test code-->
+                    <!-- Commenting out summary section -->
+                    <!-- <section class="section summary-section"> -->
+                    <!-- <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2> -->
+                    <!-- <div class="summary"> -->
+                    <!-- <p> Hello my name is Mindy Khamvongsa and I am a graduate of Fairfield University’s teaching preparation program. Throughout my teaching experience in the kindergarten through sixth-grade level in both urban and suburban school districts. Having a vast background with working in such diverse environments. I have recently completed my Master of Arts in Elementary Education and have successfully passed my PRAXIS I and Foundations of Reading. With that said, I am currently in the process of finalizing the remaining pieces left for my Connecticut Teaching Certification and hope to have everything in order by mid-summer.</p> -->
+                    <!-- </div>-->
+                    <!-- </section>-->
 
                     <section class="section experiences-section">
                         <h2 class="section-title"><i class="fa fa-star"></i>Portfolio Samples</h2>
@@ -238,13 +243,13 @@
                         </div>
                         <!--//intro-->
                         <!-- Teaching Philosophy Link
-            <h2 class="job-title"><i class="fa fa-heart"></i><a
-                    href="https://docs.google.com/document/d/1HIapA3-VniaYZANCoFKGEl63O1COjt17JFG33111WLk/edit?usp=sharing">
-                    Philosophy</a></h2><br> -->
+                    <h2 class="job-title"><i class="fa fa-heart"></i><a
+                            href="https://docs.google.com/document/d/1HIapA3-VniaYZANCoFKGEl63O1COjt17JFG33111WLk/edit?usp=sharing">
+                            Philosophy</a></h2><br> -->
                         <!-- Gallery Link
-            h2 class="job-title"><i class="fa fa-camera"></i><a
-                href="https://docs.google.com/document/d/1obXiZiReiU6XXLeaak8jIESYbVoP0_eX4NbfqCBY4lg/edit?usp=sharing">
-                Gallery</a></h2><br> -->
+                    h2 class="job-title"><i class="fa fa-camera"></i><a
+                        href="https://docs.google.com/document/d/1obXiZiReiU6XXLeaak8jIESYbVoP0_eX4NbfqCBY4lg/edit?usp=sharing">
+                        Gallery</a></h2><br> -->
                         <h2 class="job-title">
                             <i class="fa fa-book"></i><a href="https://drive.google.com/drive/folders/1m0hQVw3Rn5-51w5J5TlmPgTKT4fIRZoF?usp=sharing">
                                 Literacy
@@ -739,32 +744,32 @@
                                         </div>
                                         <!--//item-->
                                         <!--
-                            <div class="item">
-                                <div class="meta">
-                                    <div class="upper-row">
-                                        <h3 class="job-title">Adult/ Child CPR Certification and Training</h3>
-                                        <div class="time">Fall 2016</div>
-                                    </div>
+                                    <div class="item">
+                                        <div class="meta">
+                                            <div class="upper-row">
+                                                <h3 class="job-title">Adult/ Child CPR Certification and Training</h3>
+                                                <div class="time">Fall 2016</div>
+                                            </div>
 
-                                  -->
+                                          -->
                                         <!--//upper-row-->
                                         <!--
-                                                    <div class="company">Stratford Academy Johnson House</div>
-                                                </div>
+                                                            <div class="company">Stratford Academy Johnson House</div>
+                                                        </div>
+                                                    </div>
+                                    -->
+                                        <!--
+                                    <div class="item">
+                                        <div class="meta">
+                                            <div class="upper-row">
+                                                <h3 class="job-title">Adult/ Child First Aid Certification and Training</h3>
+                                                <div class="time">Fall 2016</div>
                                             </div>
-                            -->
+                                          -->
                                         <!--
-                            <div class="item">
-                                <div class="meta">
-                                    <div class="upper-row">
-                                        <h3 class="job-title">Adult/ Child First Aid Certification and Training</h3>
-                                        <div class="time">Fall 2016</div>
-                                    </div>
-                                  -->
-                                        <!--
-                                    <div class="company">Stratford Academy Johnson House</div>
-                                </div>
-                            </div> -->
+                                            <div class="company">Stratford Academy Johnson House</div>
+                                        </div>
+                                    </div> -->
 
 
                     </section>
@@ -796,12 +801,12 @@
                         </div>
                         <!--//item-->
                         <!--<div class="item">
-                <span class="project-title">Commuter Student Association</span><br>
-                <span class="project-tagline">Active member and representative in the Commuter Student Association.
-                    Planned, organized, and managed club events to promote commuter relations with university
-                    residents.</span>
-            </div>
-            <!//item-->
+                        <span class="project-title">Commuter Student Association</span><br>
+                        <span class="project-tagline">Active member and representative in the Commuter Student Association.
+                            Planned, organized, and managed club events to promote commuter relations with university
+                            residents.</span>
+                    </div>
+                    <!//item-->
 
                         <div class="item">
                             <span class="project-title"><b>School Building Project in Laos</b></span><br>
@@ -939,45 +944,45 @@
                         <!--//item-->
                         <!--//level-bar-->
                     </div>
+                </div>
+
+            </div>
+            </section>
+
+            </div>
+            <!--//main-body-->
             </div>
 
-        </div>
-        </section>
+            </section>
 
-        </div>
-        <!--//main-body-->
-        </div>
-
-        </section>
-
-        <!-- THIS IS WHERE SHIT BEGINS FOR THE ED TECH SECTION -->
-        <!--
+            <!-- THIS IS WHERE SHIT BEGINS FOR THE ED TECH SECTION -->
+            <!--
         <section class="skills-section section">
             <
         </section>
         -->
-        <!--//skills-section-->
-        </div>
-        <!--//main-body-->
-        </div>
-
-        <!-- THIS IS WHERE SHIT ENDS FOR THE ED TECH SECTION -->
-
-
-
-        <footer class="footer">
-            <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <!--<small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>-->
+            <!--//skills-section-->
             </div>
-            <!--//container-->
-        </footer>
-        <!--//footer-->
-        <!-- Javascript -->
-        <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <!-- custom js -->
-        <script type="text/javascript" src="assets/js/main.js"></script>
-    </body>
+            <!--//main-body-->
+            </div>
+
+            <!-- THIS IS WHERE SHIT ENDS FOR THE ED TECH SECTION -->
+
+
+
+            <footer class="footer">
+                <div class="text-center">
+                    <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                    <!--<small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>-->
+                </div>
+                <!--//container-->
+            </footer>
+            <!--//footer-->
+            <!-- Javascript -->
+            <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <!-- custom js -->
+            <script type="text/javascript" src="assets/js/main.js"></script>
+        </body>
 
 </html>
