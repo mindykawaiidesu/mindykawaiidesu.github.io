@@ -947,8 +947,52 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <style>
+        /* CSS for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
 
-</body>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* CSS for the button and header */
+        .dropdown-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button class="dropdown-btn">Click Me</button>
+            <div class="dropdown-content">
+                <h2 class="dropdown-header">Dropdown Header</h2>
+                <p>This is the dropdown content. It can contain any text or HTML elements.</p>
+            </div>
+        </div>
+    </body>
 
 
 
